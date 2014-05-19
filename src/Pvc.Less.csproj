@@ -7,7 +7,7 @@
     <ProjectGuid>{C50E185E-61D7-4B95-9899-505055FA19D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pvc</RootNamespace>
+    <RootNamespace>PvcPlugins</RootNamespace>
     <AssemblyName>Pvc.Less</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
