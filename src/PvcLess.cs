@@ -6,6 +6,14 @@ namespace PvcPlugins
 {
     public class PvcLess : PvcPlugin
     {
+        public override string[] SupportedTags
+        {
+            get
+            {
+                return new string[] { ".less" };
+            }
+        }
+
         public override IEnumerable<PvcStream> Execute(IEnumerable<PvcStream> inputStreams)
         {
             var lessEngine = new dotless.Core.LessEngine();
