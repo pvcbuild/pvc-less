@@ -24,7 +24,8 @@ namespace PvcPlugins
                 var lessContent = inputStream.ToString();
                 var cssContent = lessEngine.TransformToCss(lessContent, "");
 
-                var resultStream = PvcUtil.StringToStream(cssContent, inputStream.StreamName);
+                var newStreamName = Path.Combine(Path.GetDirectoryName(inputStream.StreamName), Path.GetFileNameWithoutExtension(inputStream.StreamName) + ".css");
+                var resultStream = PvcUtil.StringToStream(cssContent, newStreamName);
                 resultStreams.Add(resultStream);
             }
 
